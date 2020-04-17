@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Simple Calculator</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+    <div class="container">
+        <h1>Calculator</h1>
+      <form action="#" class="calForm" id="calForm" name="calForm">
+          <div class="div_result">
+              <input type="text" id="result" name="result" value="0">
+          </div>
+        <div class="allButtons">
+            <div class="div_reset">
+                <input type="button" value="&#8592;" id="backarrow"  name="backspace" onclick="backspaceArrow();">
+                <input type="reset" value="C" id="reset" title="Clear">
+            </div>
+            <div class="calButtons">
+                <input type="button" value="7" name="value7" onclick="getVal(value7.value);">
+                <input type="button" value="8" name="value8" onclick="getVal(value8.value);">
+                <input type="button" value="9" name="value9" onclick="getVal(value9.value);">
+                <input type="button" value="+" name="plus" onclick="getVal(plus.value);">
+            </div>
+            <div class="calButtons">
+                <input type="button" value="4" name="value4" onclick="getVal(value4.value);">
+                <input type="button" value="5" name="value5" onclick="getVal(value5.value);">
+                <input type="button" value="6" name="value6" onclick="getVal(value6.value);">
+                <input type="button" value="-" name="minus" onclick="getVal(minus.value);">
+            </div>
+            <div class="calButtons">
+                <input type="button" value="1" name="value1" onclick="getVal(value1.value);">
+                <input type="button" value="2" name="value2" onclick="getVal(value2.value);">
+                <input type="button" value="3" name="value3" onclick="getVal(value3.value);">
+                <input type="button" value="*" name="multiply" onclick="getVal(multiply.value);">
+            </div>
+            <div class="calButtons">
+                <input type="button" value="0" name="value0" onclick="getVal(value0.value);">
+                <input type="button" value="." name="dot" onclick="getVal(dot.value);">
+                <input type="button" value="/" name="divide" onclick="getVal(divide.value);">
+                <input type="button" value="=" name="equl" title="Double click to clear the calculator" id="equl" onclick="calculate()">
+            </div>
+        </div>
+      </form>
+    </div>
+        <script type="text/javascript" src="calculator.js"></script>
+    </body>
+</html>
